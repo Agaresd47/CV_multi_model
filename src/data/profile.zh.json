@@ -1,0 +1,220 @@
+{
+  "basics": {
+    "name": "董自飞",
+    "title": "范德堡大学数据科学硕士 | 机器学习、医学影像、量化研究",
+    "summaries": [
+      "我目前在寻找 2026 年开始的全职岗位，方向包括机器学习、应用 AI、量化研究，以及数据密集型工程岗位。",
+      "我的经历横跨医学影像、LLM 管线、量化建模和端到端数据系统，主导过胸片分割、低剂量 X 光去噪，以及金融披露文本理解与信号抽取项目。"
+    ],
+    "profileImage": "/profile.jpg",
+    "resumeUrl": "/董自飞简历.pdf",
+    "metaDescription": "董自飞，范德堡大学数据科学硕士，关注机器学习、医学影像、量化研究与大模型系统。"
+  },
+  "about": {
+    "paragraphs": [
+      "我做过的很多机器学习问题都有一个共同点：数据条件不好，但输出结果必须可靠。在医学影像里，这意味着要处理任意位姿胸片、不完整标注、合成数据生成和低剂量重建；在量化和应用 AI 场景里，这意味着要在噪声很高的金融披露文本和纵向数据上搭建可用的 LLM 管线和结构化数据流程。",
+      "我比较有优势的地方，是能把建模深度和工程执行结合起来。我可以从数据处理、实验设计一路做到训练、评估和管线搭建，比较适合既看技术含量、又强调落地能力的团队。"
+    ]
+  },
+  "experience": [
+    {
+      "company": "西北大学 AIMP 实验室",
+      "position": "首席研究员",
+      "period": "2025 年 12 月 - 至今",
+      "responsibilities": [
+        "主导 2.5D 低剂量 X 光去噪项目，重点解决运动鲁棒性、幻觉伪影抑制和临床可用重建质量问题。",
+        "从 0 到 1 推进 AnyCXR，构建面向任意采集位姿和不完整标注胸片的鲁棒解剖分割系统。",
+        "搭建大规模合成数据和预处理流水线，处理超过 8TB 的异构影像数据，提升跨视角泛化能力。"
+      ]
+    },
+    {
+      "company": "联博基金 x 范德堡大学",
+      "position": "量化研究员",
+      "period": "2026 年 1 月 - 至今",
+      "responsibilities": [
+        "设计基于大语言模型的因子提取系统，将 10 年 EDGAR 披露文本转成结构化、可解释的投资信号。",
+        "构建 5,000+ 高质量金融语义标注数据集，用于监督微调与多 Agent 推理探索。",
+        "研究 RL 对齐与过程监督方法，提升长金融文本推理质量。"
+      ]
+    },
+    {
+      "company": "范德堡大学 Ultimate Consequences 实验室",
+      "position": "数据架构师与工程师",
+      "period": "2025 年 3 月 - 至今",
+      "responsibilities": [
+        "搭建端到端数据基础设施，包括数据库设计、自动化 R 数据采集和 LLM 辅助验证流程。",
+        "支持 639 名个体生命史与死亡率数据的稳定管理和分析。",
+        "重构遗留 R 流程为可复用数据管线，减少手工流程并提升协作效率。"
+      ]
+    },
+    {
+      "company": "宁波金戈量锐资产管理有限公司",
+      "position": "量化研究实习生",
+      "period": "2025 年 6 月 - 2025 年 8 月",
+      "responsibilities": [
+        "构建 10 年高维高噪声时序数据的端到端处理流程，覆盖清洗、对齐、特征生成与建模。",
+        "用 Numba 和 NumPy 优化矩阵密集型训练流程，实现约 10 倍加速。",
+        "将广义特征神经网络用于高噪声时序预测，并在全量数据上完成验证。"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "AnyCXR",
+      "image": null,
+      "color": "from-sky-500 to-blue-600",
+      "title": "任意采集位姿胸片的鲁棒解剖分割",
+      "description": "第一作者医学影像项目，面向复杂采集条件、噪声数据和不完整标注场景下的胸部 X 光解剖分割。",
+      "features": [
+        "搭建多阶段合成数据生成流水线，覆盖复杂采集条件",
+        "结合弱监督和条件联合标注正则化方法",
+        "在 54 类解剖结构上取得较强分割结果，并提升下游疾病分类效果"
+      ],
+      "technologies": [
+        "Python",
+        "PyTorch",
+        "医学影像",
+        "合成数据",
+        "弱监督"
+      ],
+      "link": "https://arxiv.org/abs/2512.17263",
+      "github": "https://github.com/Agaresd47"
+    },
+    {
+      "name": "低剂量 X 光去噪",
+      "image": null,
+      "color": "from-indigo-500 to-violet-600",
+      "title": "结合扩散模型与潜空间先验的 2.5D 低剂量 X 光去噪",
+      "description": "在运动强、采集难的临床场景中，结合扩散式去噪、潜空间先验和不确定性融合的重建工作。",
+      "features": [
+        "构建基于 Brownian Bridge Diffusion 和 RQ-VAE 的去噪管线",
+        "设计平滑与门控机制，提升层间一致性并抑制幻觉伪影",
+        "强调非刚性运动区域下的稳定性和结构保真"
+      ],
+      "technologies": [
+        "PyTorch",
+        "扩散模型",
+        "表征学习",
+        "医学 AI",
+        "生成式重建"
+      ],
+      "github": "https://github.com/Agaresd47"
+    },
+    {
+      "name": "EDGAR LLM 管线",
+      "image": null,
+      "color": "from-emerald-500 to-teal-600",
+      "title": "基于大模型的金融披露文本因子提取系统",
+      "description": "面向 10-K、10-Q 和 8-K 披露文本的应用研究系统，结合长文本推理、监督微调和评估流程抽取结构化信号。",
+      "features": [
+        "构建主题理解与五档情绪分类标注数据集",
+        "搭建跨 10 年披露文本的结构化信号管线",
+        "探索过程监督和回测结合的推理增强流程"
+      ],
+      "technologies": [
+        "LLM",
+        "NLP",
+        "金融文本",
+        "SFT",
+        "评估"
+      ],
+      "github": "https://github.com/Agaresd47"
+    }
+  ],
+  "skills": [
+    {
+      "category": "机器学习与建模",
+      "items": [
+        "PyTorch",
+        "LLM",
+        "扩散模型",
+        "医学影像",
+        "弱监督",
+        "表征学习"
+      ]
+    },
+    {
+      "category": "数据与系统",
+      "items": [
+        "Python",
+        "NumPy",
+        "Pandas",
+        "Numba",
+        "R",
+        "SQL"
+      ]
+    },
+    {
+      "category": "应用方向",
+      "items": [
+        "量化研究",
+        "金融 NLP",
+        "合成数据",
+        "纵向数据分析",
+        "实验设计",
+        "评估管线"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "数据科学硕士",
+      "institution": "范德堡大学",
+      "period": "2024 年 8 月 - 2026 年 5 月（预计）",
+      "description": "GPA 3.8/4.0"
+    },
+    {
+      "degree": "计算机科学与统计双学士",
+      "institution": "北卡罗来纳大学教堂山分校",
+      "period": "2021 年 5 月 - 2024 年 5 月",
+      "description": "GPA 3.625/4.0，优秀毕业生"
+    },
+    {
+      "degree": "计算机科学",
+      "institution": "凯斯西储大学",
+      "period": "2020 年 8 月 - 2021 年 5 月",
+      "description": "转学前 GPA 4.0/4.0"
+    }
+  ],
+  "contact": {
+    "email": "zifei.dong@vanderbilt.edu",
+    "resume": "/董自飞简历.pdf",
+    "socialLinks": {
+      "github": "https://github.com/Agaresd47",
+      "linkedin": "https://www.linkedin.com/in/bruce-zdong/"
+    }
+  },
+  "navigation": [
+    {
+      "name": "简介",
+      "href": "#about"
+    },
+    {
+      "name": "经历",
+      "href": "#experience"
+    },
+    {
+      "name": "代表工作",
+      "href": "#projects"
+    },
+    {
+      "name": "技能",
+      "href": "#skills"
+    },
+    {
+      "name": "教育",
+      "href": "#education"
+    },
+    {
+      "name": "联系",
+      "href": "#contact"
+    }
+  ],
+  "footer": {
+    "copyright": "Copyright {year} 董自飞。"
+  },
+  "siteConfig": {
+    "accentColor": "blue",
+    "darkModeDefault": false
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "basics": {
+    "name": "Zifei Dong",
+    "title": "M.S. Data Science @ Vanderbilt | ML, Medical Imaging, Quant Research",
+    "summaries": [
+      "I am looking for 2026 full-time roles in machine learning, applied AI, quantitative research, and data-heavy engineering.",
+      "My work combines medical imaging, LLM pipelines, quantitative modeling, and end-to-end data systems. I have led projects in chest X-ray segmentation, low-dose X-ray denoising, and financial disclosure analysis."
+    ],
+    "profileImage": "/profile.jpg",
+    "resumeUrl": "/Zifei_Dong_Resume.pdf",
+    "metaDescription": "Zifei Dong is an M.S. student at Vanderbilt University focused on machine learning, medical imaging, quantitative research, and LLM systems."
+  },
+  "about": {
+    "paragraphs": [
+      "I have worked on machine learning problems where the data are difficult and the outputs still need to be reliable. In medical imaging, that has meant handling arbitrary-view chest X-rays, incomplete labels, synthetic data generation, and low-dose reconstruction. In quantitative and applied AI settings, it has meant building LLM pipelines and structured data workflows over noisy financial disclosures and longitudinal datasets.",
+      "What I bring is a mix of modeling depth and practical execution. I am comfortable moving from data processing and experimentation to training, evaluation, and pipeline design. That range has been useful in research labs, quantitative research settings, and applied projects that need both technical rigor and delivery."
+    ]
+  },
+  "experience": [
+    {
+      "company": "AIMP Lab, Northwestern University",
+      "position": "Lead Researcher",
+      "period": "Dec 2025 - Present",
+      "responsibilities": [
+        "Leading a 2.5D low-dose X-ray denoising project focused on motion robustness, hallucination suppression, and clinically usable reconstruction quality.",
+        "Led AnyCXR from initial pipeline design to paper submission, building a robust segmentation system for chest X-rays with arbitrary acquisition positions and imperfect annotations.",
+        "Built large-scale synthetic-data and preprocessing pipelines over 8TB of heterogeneous imaging data to improve cross-view generalization."
+      ]
+    },
+    {
+      "company": "AllianceBernstein x Vanderbilt University",
+      "position": "Quantitative Researcher",
+      "period": "Jan 2026 - Present",
+      "responsibilities": [
+        "Designing LLM-based factor extraction systems that turn 10 years of EDGAR filings into structured, interpretable investment signals.",
+        "Built 5,000+ high-quality financial semantic annotations for supervised fine-tuning and explored multi-agent reasoning for signal fusion.",
+        "Studied RL alignment and process-supervision approaches to improve reasoning quality in long financial documents."
+      ]
+    },
+    {
+      "company": "Ultimate Consequences Lab, Vanderbilt University",
+      "position": "Data Architect and Engineer",
+      "period": "Mar 2025 - Present",
+      "responsibilities": [
+        "Built end-to-end data infrastructure including database design, automated R-based data collection, and LLM-assisted validation workflows.",
+        "Supported stable management and analysis for mortality and life-history data across 639 individuals.",
+        "Refactored legacy R workflows into reusable data pipelines, improving collaboration and reducing manual work."
+      ]
+    },
+    {
+      "company": "Jinge Liangrui Asset Management",
+      "position": "Quantitative Research Intern",
+      "period": "Jun 2025 - Aug 2025",
+      "responsibilities": [
+        "Built end-to-end pipelines for 10 years of high-dimensional noisy time series data, covering cleaning, alignment, feature generation, and modeling.",
+        "Optimized matrix-heavy training workflows with Numba and NumPy for roughly 10x faster iteration.",
+        "Integrated generalized signature neural networks for noisy time-series prediction and validated performance on full-scale data."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "AnyCXR",
+      "image": null,
+      "color": "from-sky-500 to-blue-600",
+      "title": "Robust Chest X-ray Segmentation Across Arbitrary Acquisition Positions",
+      "description": "First-author medical imaging project on anatomy segmentation for chest X-rays collected under diverse positions, noise patterns, and annotation quality.",
+      "features": [
+        "Built a multi-stage synthetic-data generation pipeline for hard acquisition conditions",
+        "Combined weak supervision with conditional annotation regularization",
+        "Reached strong Dice performance on 54 anatomical structures and improved downstream disease classification"
+      ],
+      "technologies": [
+        "Python",
+        "PyTorch",
+        "Medical Imaging",
+        "Synthetic Data",
+        "Weak Supervision"
+      ],
+      "link": "https://arxiv.org/abs/2512.17263",
+      "github": "https://github.com/Agaresd47"
+    },
+    {
+      "name": "Low-Dose X-ray Denoising",
+      "image": null,
+      "color": "from-indigo-500 to-violet-600",
+      "title": "2.5D Low-Dose X-ray Denoising with Diffusion and Latent Priors",
+      "description": "Ongoing reconstruction work that combines diffusion-style denoising, latent priors, and uncertainty-aware feature fusion for motion-heavy clinical settings.",
+      "features": [
+        "Built a Brownian-bridge diffusion and RQ-VAE-based denoising pipeline",
+        "Designed smoothing and gating mechanisms to improve slice consistency and suppress hallucinated artifacts",
+        "Targeted practical reliability in non-rigid anatomical regions under difficult motion"
+      ],
+      "technologies": [
+        "PyTorch",
+        "Diffusion Models",
+        "Representation Learning",
+        "Medical AI",
+        "Generative Reconstruction"
+      ],
+      "github": "https://github.com/Agaresd47"
+    },
+    {
+      "name": "EDGAR LLM Pipeline",
+      "image": null,
+      "color": "from-emerald-500 to-teal-600",
+      "title": "LLM-Based Factor Extraction from Financial Disclosures",
+      "description": "Applied research system for extracting structured signals from 10-K, 10-Q, and 8-K filings using long-context reasoning, supervised fine-tuning, and evaluation workflows.",
+      "features": [
+        "Created a labeled dataset for topic understanding and five-level sentiment classification",
+        "Built structured pipelines over a decade of filings for interpretable factor generation",
+        "Explored reasoning-enhanced workflows with process supervision and backtesting"
+      ],
+      "technologies": [
+        "LLMs",
+        "NLP",
+        "Financial Text",
+        "SFT",
+        "Evaluation"
+      ],
+      "github": "https://github.com/Agaresd47"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Machine Learning and Modeling",
+      "items": [
+        "PyTorch",
+        "LLMs",
+        "Diffusion Models",
+        "Medical Imaging",
+        "Weak Supervision",
+        "Representation Learning"
+      ]
+    },
+    {
+      "category": "Data and Systems",
+      "items": [
+        "Python",
+        "NumPy",
+        "Pandas",
+        "Numba",
+        "R",
+        "SQL"
+      ]
+    },
+    {
+      "category": "Applied Areas",
+      "items": [
+        "Quantitative Research",
+        "Financial NLP",
+        "Synthetic Data",
+        "Longitudinal Data Analysis",
+        "Experiment Design",
+        "Evaluation Pipelines"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.S. in Data Science",
+      "institution": "Vanderbilt University",
+      "period": "Aug 2024 - May 2026 (Expected)",
+      "description": "GPA 3.8/4.0"
+    },
+    {
+      "degree": "B.S. in Computer Science and Statistics",
+      "institution": "UNC-Chapel Hill",
+      "period": "May 2021 - May 2024",
+      "description": "GPA 3.625/4.0, graduated with distinction"
+    },
+    {
+      "degree": "B.S. in Computer Science",
+      "institution": "Case Western Reserve University",
+      "period": "Aug 2020 - May 2021",
+      "description": "GPA 4.0/4.0 before transfer"
+    }
+  ],
+  "contact": {
+    "email": "zifei.dong@vanderbilt.edu",
+    "resume": "/Zifei_Dong_Resume.pdf",
+    "socialLinks": {
+      "github": "https://github.com/Agaresd47",
+      "linkedin": "https://www.linkedin.com/in/bruce-zdong/"
+    }
+  },
+  "navigation": [
+    {
+      "name": "Profile",
+      "href": "#about"
+    },
+    {
+      "name": "Experience",
+      "href": "#experience"
+    },
+    {
+      "name": "Selected Work",
+      "href": "#projects"
+    },
+    {
+      "name": "Skills",
+      "href": "#skills"
+    },
+    {
+      "name": "Education",
+      "href": "#education"
+    },
+    {
+      "name": "Contact",
+      "href": "#contact"
+    }
+  ],
+  "footer": {
+    "copyright": "Copyright {year} Zifei Dong."
+  },
+  "siteConfig": {
+    "accentColor": "blue",
+    "darkModeDefault": false
+  }
+}
